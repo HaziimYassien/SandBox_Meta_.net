@@ -7125,4 +7125,8 @@ button.close {
     display: none !important;
   }
 }
+.image {
+  width: 100%;
+  height: auto;
+}
 /*# sourceMappingURL=bootstrap.css.map */
