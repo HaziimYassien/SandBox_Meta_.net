@@ -1,14 +1,380 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
-  </head>
-  <body>
-    <!-- Part 1: Software Engineering 6 hrs. -->
-    <div>
-      <h1>Part 1: Software Engineering: </h1>
-      <h2>&nbsp;Introduction to software development industry.</h2>
-  </body>
+</head>
+
+<body>
+<p class="h1">Part 1: Software Engineering:</p class="h1">
+<p class="h2">_Introduction to software development industry.</h2>
+<p class="h1">Part 2: Database Design and Querying</h1>
+<p>it starts from a business need to a business logic and the business logic should fulfill the client's demands</p>
+<p>unified process is transferring the client's business needs to code</p>
+<p>there are three layers: presentation layer, data layer, data access layer </p>
+<p>application structure: </p>
+<p>1. preserntation layer: </p>
+<p>it introduces the UI or user interface</p>
+<p>the actor interacts with the application I've made</p>
+<p>the second layer is the data layer: </p>
+<p>it has all the required data for this application</p>
+<p>it's used as a data source</p>
+<p>so it has stuff like the username and the password</p>
+<p>then the business logic is applied and decisons are made based on the data sent from the presentation layer</p>
+<p>the third layer is the data acess layer: </p>
+<p>it connects between the presentation layer and the data layer</p>
+<p>inside the data access layer the CRUD process is made</p>
+<p> CRUD stands for Creat Read Update Delete</p>
+<p>it also has other processes like Select Insert Update Delete</p>
+<p>there are differnet type of the data layer like : Web, Mobile, Game, Console Application</p>
+<p>the presentaion layer is a UI not a GUI becuase sometimes it doesn't include graphics</p>
+<p>data layer need to have two rules: 1. standard 2.Queryable</p>
+<p>1. Standard: it has data which you can save and retreive without any modifcation to the data itself</p>
+<p>2. Queryable: it can answer questions so it can work like the boothes in mall of arabia where you can just know
+    where
+    to go from it </p>
+<p> there are multiple methods to create a data layer like it can be a database or XML or JSON and all of them are
+    data
+    layers</p>
+<p>the data access layer has most of the issues </p>
+<p>cuz it's main goal is to conncet any type of persentation layer with any type of data layer so it needs to be
+    flexible</p>
+<p>also it has the business logic which is wrong</p>
+<p>the business logic needs to have it's own layer called BLL or Business Logic Layer</p>
+<p>but there are only three mandataory layers and BLL isn't one of them</p>
+<p>the data layer doesn't have any form of business logic all it has are only stocks of data like a library</p>
+<img src="LEC 2 - Screenshot 1.png" alt="an image here" class="image">
+<p>we first design the data layer in any application or it happens for the database of the application </p>
+<p>every project has it's own life cycle</p>
+<p>so the product first starts as an idea or a business need </p>
+<p>then we turn it into a product or an app</p>
+<p>we define the scope and the time or deadline costs and the resources </p>
+<p>the project managemnt is the department which manages those 4 factors</p>
+<p>1. time, 2. deadline, 3. costs, 4. resources</p>
+<p>the software development lifecycle has models </p>
+<p>models are stages which with it we pass the development process of the projcet</p>
+<p>1. Reuirements or information gathering from the client</p>
+<p>2. analysis </p>
+<p>3. design</p>
+<p>4. implementation </p>
+<p>5. testing/debugging</p>
+<p>6. maintainence </p>
+<p>there are multiple models that we can follow </p>
+<p>1. waterfall model</p>
+<p>2. incremental model</p>
+<p>3. V-Shaped model </p>
+<p>4. spiral model(agile and scrum are included in this model) </p>
+<p>and alot of companies in egypt work with agile or scrum</p>
+<p>as developers you are included in only one of the stages </p>
+<p>as a developer you will not be informed about the other stages</p>
+<p>as a developer you will be working in the implmentation process</p>
+<p>after being a senior you will pass to intergration </p>
+<p>google those words: </p>
+<p>SDLC(Software Development Life Cycle)</p>
+<p> the differnece between data and information: </p>
+<p>data is the entire collection of information that you have store</p>
+<p>information are the knowledge you need right now</p>
+<p>for example: </p>
+<p>I have 30 games on steam those are the data</p>
+<p>I will only play one game this is the information</p>
+<p>we need to transform the data to a database which will make it faster to get information from it </p>
+<p>what are the disatvantages of having data and not database</p>
+<p>first data can be very large and have a huge number of files</p>
+<p> the main issue with data is the repeativnes, like if you have 4 files for students, </p>
+<p>and you want to change one of those student's names you will have to manually go through every file</p>
+<p>while if you have database, the student can be considered as an object </p>
+<p>to transfer the data to a database we make something called normalization </p>
+<p>after finsihing the normalizaion we have something called the database model</p>
+<p>we then upload it to a system called DPMS or database managment system </p>
+<img src="LEC 2 - Screenshot 2.png" alt="">
+<p>we will now start making data to a database </p>
+<table>
+    <tr>
+        <th>StudentName</th>
+        <th>DateOfBirh</th>
+        <th>City</th>
+        <th>TeacherName</th>
+    </tr>
+    <tr>
+        <td>Ahmed Samy</td>
+        <td>5/7/2017</td>
+        <td>Cairo</td>
+        <td>Ahmed Samy</td>
+    </tr>
+    <tr>
+        <td>Dina Hassan</td>
+        <td>4/9/2017</td>
+        <td>Alexandria</td>
+
+    </tr>
+</table>
+<p>now we can't add another teacher here like this: "ahmed ramy/Sara Saad"</p>
+<p>because it will be added as one variable with two name which doesn't make sense</p>
+<p>this is called multiplicty</p>
+<p>so the only option we have is for us to add an M over the teacher's section </p>
+<p>and just leave it for now</p>
+<table>
+    <tr>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th>M</th>
+    </tr>
+    <tr>
+        <th>StudentName</th>
+        <th>DateOfBirh</th>
+        <th>City</th>
+        <th>TeacherName</th>
+    </tr>
+    <tr>
+        <td>Ahmed Samy</td>
+        <td>5/7/2017</td>
+        <td>Cairo</td>
+        <td>N/A</td>
+    </tr>
+    <tr>
+        <td>Dina Hassan</td>
+        <td>4/9/2017</td>
+        <td>Alexandria</td>
+        <td>N/A</td>
+    </tr>
+</table>
+<p>we will have to add a minumum of 7 or 8 rows so we can understand and solve the issue we are facing</p>
+<table>
+    <tr>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th>M</th>
+    </tr>
+    <tr>
+        <th>StudentName</th>
+        <th>DateOfBirh</th>
+        <th>City</th>
+        <th>TeacherName</th>
+    </tr>
+    <tr>
+        <td>Ahmed Samy</td>
+        <td>5/7/2017</td>
+        <td>Cairo</td>
+        <td>N/A</td>
+    </tr>
+    <tr>
+        <td>Dina Hassan</td>
+        <td>4/9/2017</td>
+        <td>Alexandria</td>
+        <td>N/A</td>
+    </tr>
+    <tr>
+        <td>ahmed el sakka</td>
+        <td>4/8/2013</td>
+        <td>shubra masr</td>
+        <td>N/A</td>
+    </tr>
+    <tr>
+        <td>ahmed el sakka</td>
+        <td>4/8/2013</td>
+        <td>shubra masr</td>
+        <td>N/A</td>
+    </tr>
+    <tr>
+        <td>ahmed el sakka</td>
+        <td>4/8/2013</td>
+        <td>shubra masr</td>
+        <td>N/A</td>
+    </tr>
+    <tr>
+        <td>ahmed el sakka</td>
+        <td>4/8/2013</td>
+        <td>shubra masr</td>
+        <td>N/A</td>
+    </tr>
+    <tr>
+        <td>ahmed el sakka</td>
+        <td>4/8/2013</td>
+        <td>shubra masr</td>
+        <td>N/A</td>
+    </tr>
+    <tr>
+        <td>ahmed el sakka</td>
+        <td>4/8/2013</td>
+        <td>shubra masr</td>
+        <td>N/A</td>
+    </tr>
+    <tr>
+        <td>ahmed el sakka</td>
+        <td>4/8/2013</td>
+        <td>shubra masr</td>
+        <td>N/A</td>
+    </tr>
+    <tr>
+        <td>ahmed el sakka</td>
+        <td>4/8/2013</td>
+        <td>shubra masr</td>
+        <td>N/A</td>
+    </tr>
+</table>
+<p>the other issue here is the following</p>
+<p>repeating the city name multiple times will consume alot of storage which might lead to issues in the future</p>
+<p>the best way to do it is transferring it to numbers so for example Cairo = 1, Alex = 2, </p>
+<p>multiplicty and redundancy</p>
+<p>so to solve those issues we need to break any row who has those issues </p>
+<img src="LEC 2 - Screenshot 3.png" alt="an image here" class="image">
+<p>to solve those issues we need to go to from the first Normal Form to the second</p>
+<p>so we will divide the city and the teacherName to a differnet row</p>
+<p>and then start making naming and identyfing for those rows</p>
+<table>
+    <tr>
+        <th>City</th>
+    </tr>
+    <tr>
+        <td>Cairo</td>
+        <td>Alexendria</td>
+        <td>Tanta</td>
+    </tr>
+</table>
+<table>
+    <tr>
+        <th>TeacherName</th>
+    </tr>
+    <tr>
+        <td>Ahmed Ramy</td>
+        <td>Amira Saad</td>
+    </tr>
+</table>
+<p>will start naming </p>
+<p>will start identifying </p>
+<!-- break -->
+<p class="h2">_Why database?</h2>
+<p class="h2">_Data, Information, Database and Query.</h2>
+<p class="h2">_The Robust Design</h2>
+<p class="h2">_Normalization</h2>
+<p class="h2">_Case Studies</h2>
+<p class="h2">_Entity Relaitonship Diagram (ERD)</h2>
+<p class="h2">_Introduction to RDBMSs and MS SQL Server</h2>
+<p class="h2">_Creating Database</h2>
+<p class="h2">_Database files and specifcations</h2>
+<p class="h2">_creating tables</h2>
+<p class="h2">_SQL server data types</h2>
+<p class="h2">_Column Properties</h2>
+<p class="h2">_Relationship Diagrams</h2>
+<p class="h2">_Querying data using T-SQL</h2>
+<p class="h2">_DML - DDL - DCL and languages specifcations</h2>
+<p class="h2">_SELECT Clause</h2>
+<p class="h2">_Sorting data (ORDER BY)</h2>
+<p class="h2">_Filtering data and applying Conditions (WHERE)</h2>
+<p class="h2">_T-SQL Operators</h2>
+<p class="h3">___Arithemtic Operators</h3>
+<p class="h3">___Comparison operators</h3>
+<p class="h3">___Logical Operators</h3>
+<p class="h3">___Other Operatros (IS- IN- BETWEEN- LIKE)</h3>
+<p class="h2">_Wildcards</h2>
+<p class="h2">_Virtual Fields and Alias Names</h2>
+<p class="h2">_Aggregate Functions</h2>
+<p class="h3">___MAX()- MIN()- AVG()- SUM()- COUNT().</h3>
+<p class="h2">_Grouping Data (GROUP BY)</h2>
+<p class="h2">_HAVING</h2>
+<p class="h2">_CUBE</h2>
+<p class="h2">_ROLLUP</h2>
+<p class="h2">_Joins</h2>
+<p class="h3">___Inner Join</h3>
+<p class="h3">___Left outer join</h3>
+<p class="h3">___right outer join</h3>
+<p class="h3">___full outer join</h3>
+<p class="h3">___cross join</h3>
+<p class="h2">_select into</h2>
+<p class="h2">_union</h2>
+<p class="h2">_union all</h2>
+<p class="h2">_intersect</h2>
+<p class="h2">_except</h2>
+<p class="h2">_all</h2>
+<p class="h2">_any</h2>
+<p class="h2">_data sampling</h2>
+<p class="h3">___top</h3>
+<p class="h3">___distinct</h3>
+<p class="h3">___offset</h3>
+<p class="h3">___fetch</h3>
+<p class="h2">_subquery</h2>
+<p class="h2">_insert statment</h2>
+<p class="h2">_update statment</h2>
+<p class="h2">_delete statment</h2>
+<p class="h2">_database entities</h2>
+<p class="h2">_views</h2>
+<p class="h2">_variables</h2>
+<p class="h2">_stored procedures</h2>
+<p class="h3">___built-in</h3>
+<p class="h3">___user-defined</h3>
+<p class="h4">____parameterless</h4>
+<p class="h4">____Input-Parameter</h4>
+<p class="h4">____Output Parameter</h4>
+<p class="h2">_Functions</h2>
+<p class="h3">___Built-In</h3>
+<p class="h3">___User-Defined</h3>
+<p class="h4">____Scaler-Valued</h4>
+<p class="h4">____Table-Valued</h4>
+<p class="h2">_Triggers</h2>
+<p class="h3">___AFTER</h3>
+<p class="h3">___INSTEAD OF</h3>
+<p class="h2">_Indexes</h2>
+<p class="h3">___Clustered</h3>
+<p class="h3">___Nonclustered</h3>
+<p class="h2">_Computed Columns</h2>
+<p class="h2">_Persisted columns</h2>
+<p class="h2">_Revision</h2>
+<p class="h2">_Database Design and T-SQL Test</h2>
+<p class="h1">Part 3: Programming with C#</h1>
+<p class="h2">_Programmings practicies and processes</h2>
+<p class="h2">_.NET framework and.NET Core</h2>
+<p class="h2">_OOP as a theoretical base</h2>
+<p class="h3">___Class-Objects</h3>
+<p class="h3">___Members</h3>
+<p class="h2">_Everything is an OBJECT</h2>
+<p class="h2">_.NET components</h2>
+<p class="h3">___BCL</h3>
+<p class="h3">___CLR</h3>
+<p class="h3">___JIT compiler</h3>
+<p class="h2">_PRogram structure and files</h2>
+<p class="h2">_namespaces</h2>
+<p class="h2">_top-level statements</h2>
+<p class="h2">_writing first C# program</h2>
+<p class="h2">_variable</h2>
+<p class="h2">_const and readonly</h2>
+<p class="h2">_data types</h2>
+<p class="h2">_converstions</h2>
+<p class="h2">_operators</h2>
+<p class="h3">___Arithmetic</h3>
+<p class="h3">___Comparison</h3>
+<p class="h3">___Logical and Bitwise</h3>
+<p class="h3">___Assignment</h3>
+<p class="h3">___Increment Decrement</h3>
+<p class="h2">_Control Statments</h2>
+<p class="h3">___Branching</h3>
+<p class="h4">____If statment</h4>
+<p class="h4">____switch statment</h4>
+<p class="h4">____ternary operator</h4>
+<p class="h2">_Iterations</h2>
+<p class="h3">___for loop</h3>
+<p class="h3">___do while loop</h3>
+<p class="h3">___while loop</h3>
+<p class="h3">___foreach</h3>
+<p class="h2">_jumping</h2>
+<p class="h3">___goto</h3>
+<p class="h2">_interruptions</h2>
+<p class="h3">___continue- break- return</h3>
+<p class="h2">_understanding arrays</h2>
+<p class="h2">_working with multidimensional arrays</h2>
+<p class="h2">_handling erros</h2>
+<p class="h3">___try catch</h3>
+<p class="h3">___customizing exception handling</h3>
+<p class="h3">___finally</h3>
+<p class="h2">_enumerations</h2>
+<p class="h2">_Access modifiers</h2>
+<p class="h2">_methods</h2>
+<p class="h3">___void</h3>
+<p class="h3">___return</h3>
+</body>
+
 </html>
