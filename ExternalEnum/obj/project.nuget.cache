@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "nspyC5OmFp8sGOEoy3j1To1DRlKxFHXceBeEkeWDHYE2Ciu3XJx+wvgy2w+MQlXNzyU1SRrTv3iP4DnTkdgNkg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\hazii\\Documents\\GitHub\\SandBox_Meta_.net\\ExternalEnum\\ExternalEnum.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\hazii\\.nuget\\packages\\microsoft.dotnet.ilcompiler\\8.0.0-rc.2.23479.6\\microsoft.dotnet.ilcompiler.8.0.0-rc.2.23479.6.nupkg.sha512",
+    "C:\\Users\\hazii\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.0-rc.2.23479.6\\microsoft.net.illink.tasks.8.0.0-rc.2.23479.6.nupkg.sha512",
+    "C:\\Users\\hazii\\.nuget\\packages\\runtime.win-x64.microsoft.dotnet.ilcompiler\\8.0.0-rc.2.23479.6\\runtime.win-x64.microsoft.dotnet.ilcompiler.8.0.0-rc.2.23479.6.nupkg.sha512"
+  ],
+  "logs": []
+}

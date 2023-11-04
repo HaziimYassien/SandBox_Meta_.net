@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "cZOPAifwP9/EcfyoVBDUvdE7ocy15UFS+cPr5I5DEnjbxSyBS2zjICJCojAjd/8l8XdzKvL+bf11Kg4KKnrP6Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\hazii\\Documents\\GitHub\\SandBox_Meta_.net\\C#_SandBox_2\\C#_SandBox_2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\hazii\\.nuget\\packages\\microsoft.dotnet.ilcompiler\\8.0.0-rc.2.23479.6\\microsoft.dotnet.ilcompiler.8.0.0-rc.2.23479.6.nupkg.sha512",
+    "C:\\Users\\hazii\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.0-rc.2.23479.6\\microsoft.net.illink.tasks.8.0.0-rc.2.23479.6.nupkg.sha512",
+    "C:\\Users\\hazii\\.nuget\\packages\\runtime.win-x64.microsoft.dotnet.ilcompiler\\8.0.0-rc.2.23479.6\\runtime.win-x64.microsoft.dotnet.ilcompiler.8.0.0-rc.2.23479.6.nupkg.sha512"
+  ],
+  "logs": []
+}
